@@ -1,0 +1,11 @@
+pub mod clock;
+pub mod workspaces;
+pub mod volume;
+pub mod cpu;
+pub mod memory;
+pub mod battery;
+pub mod notifications;
+pub mod wifi;
+pub mod window;
+pub mod exec;
+pub mod wifi_drawer;

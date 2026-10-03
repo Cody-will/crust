@@ -1,0 +1,78 @@
+# Example config. Copy to ~/.config/crust/config.toml
+# [bar.*] is chrome. [[start]] / [[center]] / [[end]] are modules, in order.
+
+theme = "mocha"
+
+[colors]
+accent = "#89b4fa"
+
+[bar]
+position = "top"
+height = 36
+class = "w-full h-full items-center bg-surface/90 text-text"
+
+[bar.start]
+class = "flex items-center gap-2"
+container_class = "justify-start px-2"
+
+[bar.center]
+class = "flex items-center gap-2"
+container_class = "justify-center"
+
+[bar.end]
+class = "flex items-center gap-2"
+container_class = "justify-end px-2"
+
+[[start]]
+type = "workspaces"
+class = "flex gap-1 text-text"
+
+[start.parts]
+item = "px-2 rounded text-muted"
+active = "px-2 rounded bg-accent text-surface"
+
+[[start]]
+type = "window"
+class = "px-2 text-sm text-text"
+max_length = 40
+
+[[center]]
+type = "clock"
+class = "px-3 text-sm text-text"
+format = "%H:%M"
+
+[[end]]
+type = "cpu"
+class = "px-2 text-sm text-text"
+
+[[end]]
+type = "memory"
+class = "px-2 text-sm text-text"
+
+[[end]]
+type = "volume"
+class = "px-2 text-sm text-text"
+
+[[end]]
+type = "wifi"
+class = "px-2 text-sm text-text"
+
+[end.parts]
+drawer = "w-[300px] p-2 gap-1 rounded-md bg-surface/95 text-text border border-accent/40"
+row = "px-2 py-1 rounded text-text"
+active = "px-2 py-1 rounded bg-accent/30 text-text"
+connect = "mt-1 px-2 py-1 rounded-md bg-accent text-surface"
+
+[[end]]
+type = "battery"
+class = "px-2 text-sm text-text"
+
+[[end]]
+type = "notifications"
+class = "px-2 text-sm text-text"
+
+# [[end]]
+# type = "exec"
+# command = "date +%a"
+# interval = 60
+# class = "px-2 text-sm text-muted"
