@@ -3,7 +3,7 @@
 
 ![crust](docs/images/logo.jpg)
 
-A status bar for Hyprland, written in Rust. It sits on the edge of the screen, which is also where the crust of a pizza sits. That is the whole joke.
+A status bar for Hyprland, written in Rust.
 
 crust is a layer-shell bar. You describe modules in a TOML file and style them with short class strings that look like Tailwind (`px-2`, `rounded-md`, `bg-surface/90`). There is no webview and no GTK. The first time you run it, if you do not already have a config, it writes one and opens a mocha bar.
 
